@@ -1,0 +1,1914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="font/fontawesome-free-5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="fpt.css">
+    <link rel="stylesheet" href="resposive.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .col {
+            text-align: center;
+            background-color:white;
+            background-clip: content-box;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            text-decoration: none;
+            color: black;
+            transition: transform linear 0.1;
+            will-change: transform;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .col:hover{
+            box-shadow: 0px 0px 2px 2px rgba(173, 172, 172, 0.9);
+        }
+        body{
+    font-family: sans-serif;
+    background: rgb(83, 18, 18);
+    
+}
+    </style>
+</head>
+<body>
+    <div class="app"></div>
+        <header class="header">
+            <div class="grid wide">
+                <nav class="header__navbar">
+                    <!--nav mobile star-->
+                    <div class="div">
+                        <label for="nav__input" class="nav__bars-btn ">
+                            <i class="fa fa-bars nav__bars-icon"></i>
+                        </label>
+                        <div class="nav__header-mobile-logo hide-on-pc ">
+                            <img src="images/logofpt.png" class="nav__header-mobile-img" alt="">
+                        </div>
+                        <a href="#" class="nav__header-mobile-btn hide-on-pc">
+                            <i class="fa fa-cart-plus nav__header-mobile-icon"></i>
+                        </a>
+                    </div>
+                    <input type="checkbox" class="nav__input-btn hide-on-mobile-table" id="nav__input">
+                    <label for="nav__input" class="overlay"></label>
+                    <nav class="navbar__mobile">
+                        <div class="nav__mobile-logo ">
+                            <img src="images/logofpt.png" alt="">
+                        </div>
+                        <nav class="siderbar__menu hide-on-pc ">
+                            <ul class="siderbar__menu-list">
+                                <li class="siderbar__menu-item" id="phone">
+                                    <a href="#phone" class="siderbar__menu-link">
+                                        <i class="siderbar__menu-icon fas fa-mobile-alt "></i>
+                                        Điện thoại
+                                        <i class="fas fa-sort-down menu-icon"></i>
+                                    </a>
+                                    <ul class="siderbar__menu-child">
+                                        <li class="">
+                                            <a href="#" class="">Iphone</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Samsung</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Oppo</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Huawei</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Vivo</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Xiaomi</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Reamle</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Vsmart</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Nokia</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Masstel</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="siderbar__menu-item" id="laptop">
+                                    <a href="#laptop" class="siderbar__menu-link">
+                                        <i class="siderbar__menu-icon fa fa-laptop"></i>
+                                        Laptop
+                                        <i class="fas fa-sort-down menu-icon"></i>
+                                    </a>
+                                    <ul class="siderbar__menu-child">
+                                        <li class="">
+                                            <a href="#" class="">MacBook</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Dell</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Lenovo</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Asus</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Acer</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Hp</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Microsof</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">MSI</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="siderbar__menu-item" id="watch">
+                                    <a href="#watch" class="siderbar__menu-link">
+                                        <svg class="menu__navbar-icon" enable-background="new 0 0 22 22" height="24" viewBox="0 0 22 22" width="24" xmlns="http://www.w3.org/2000/svg">
+                                            <g>
+                                                <path fill="black"
+                                                    d="m17.1 4.215-1.398-3.729c-.11-.292-.39-.486-.702-.486h-6c-.313 0-.592.194-.702.487l-1.398 3.728c-1.111.441-1.9 1.52-1.9 2.785v10c0 1.265.789 2.344 1.9 2.784l1.398 3.729c.11.293.389.487.702.487h6c.312 0 .592-.194.702-.487l1.398-3.729c1.11-.44 1.9-1.519 1.9-2.784v-10c0-1.265-.789-2.344-1.9-2.785zm-9.1 13.785c-.551 0-1-.449-1-1v-10c0-.551.449-1 1-1h8c.551 0 1 .449 1 1v10c0 .551-.449 1-1 1z"
+                                                />
+                                                <path  fill="white" d="m13 11.586v-3.336c0-.552-.448-1-1-1s-1 .448-1 1v3.75c0 .265.105.52.293.707l2.25 2.25c.195.195.451.293.707.293s.512-.098.707-.293c.391-.391.391-1.023 0-1.414z" />
+                                            </g>
+                                        </svg>
+                                        Đồng hồ
+                                        <i class="fas fa-sort-down menu-icon"></i>
+                                    </a>
+                                    <ul class="siderbar__menu-child">
+                                        <li class="">
+                                            <a href="#" class="">Apple Watch</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Samsung</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Huawei</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Oppo</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Realme</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Garmin</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Suunto</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Honor</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Kidcare</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Masstel</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                    
+                                </li>
+                                <li class="siderbar__menu-item" id="table" >
+                                    <a href="#table" class="siderbar__menu-link">
+                                        <i class="siderbar__menu-icon fas fa-tablet-alt"></i>
+                                        Table
+                                        <i class="fas fa-sort-down menu-icon"></i>
+                                    </a>
+                                    <ul class="siderbar__menu-child">
+                                        <li class="">
+                                            <a href="#" class="">Apple(ipad)</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Samsung</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Lenovo</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Masstel</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Huawei</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Xiaomi</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="siderbar__menu-item" id="headphone">
+                                    <a href="#headphone" class="siderbar__menu-link">
+                                        <i class="fas fa-headphones-alt siderbar__menu-icon"></i>
+                                        Phụ kiện
+                                        <i class="fas fa-sort-down menu-icon"></i>
+                                    </a>
+                                    <ul class="siderbar__menu-child">
+                                        <li class="">
+                                            <a href="#" class="">Bao ốp lưng</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Sạc dự phòng</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Thẻ nhớ</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Dán màn hình</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Tai nghe</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Loa</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">USB-Ổ cứng</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Sạc cáp</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Chuột-Bàn phím</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Balo-Túi sách</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">TV-Box</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Phụ kiện khác</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Phụ kiện Apple</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="">Phụ kiện cũ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="siderbar__menu-item">
+                                    <a href="#" class="siderbar__menu-link">
+                                        <i class="siderbar__menu-icon fas fa-redo-alt "></i>
+                                        Máy cũ giá rẻ
+                                        
+                                    </a>
+                                </li>
+                                <li class="siderbar__menu-item">
+                                    <a href="#" class="siderbar__menu-link">
+                                        <i class="siderbar__menu-icon fas fa-sim-card"></i>
+                                        Sim&Thẻ
+                                        
+                                    </a>
+                                </li>
+                                <li class="siderbar__menu-item">
+                                    <a href="#" class="siderbar__menu-link">
+                                        <i class="siderbar__menu-icon fab fa-microsoft"></i>
+                                        Phần mềm
+                                        
+                                    </a>
+                                </li>
+                                <li class="siderbar__menu-item">
+                                    <a href="#" class="siderbar__menu-link">
+                                        <i class="fas fa-file-alt siderbar__menu-icon"></i>
+                                        Thông tin hay
+                                    </a>
+                                </li>
+                                <li class="siderbar__menu-item">
+                                    <a href="#" class="siderbar__menu-link">
+                                        <i class="fas fa-lightbulb siderbar__menu-icon"></i>
+                                        Thu hộ
+                                    </a>
+                                </li>
+                                <li class="siderbar__menu-item">
+                                    <a href="#" class="siderbar__menu-link">
+                                        <i class="siderbar__menu-icon fa fa-gift"></i>
+                                        Thông tin trao thưởng
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <label for="nav__input" class="nav__mobile-close ">
+                            <i class="fa fa-times" ></i>
+                        </label>
+                    </nav>
+                    <!--nav mobile end-->
+                    <div class="header__logo hide-on-mobile-table">
+                        <img src="images/logofpt.png" class="header__logo-img">
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search-wrap">
+                            <input type="text" class="hearder__search-input" placeholder="Nhập tên điện thoại,máy tính,phụ kiện...cần tìm" autocomplete="name">
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">
+                                    Lịch sử tìm kiếm
+                                </h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="#" class="header__search-history-item-link">Điện thoại IphoneX</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="#" class="header__search-history-item-link">MacBook 2020</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="#" class="header__search-history-item-link">Tai nghe AirPods Max </a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="#" class="header__search-history-item-link">Đồng hồ macbook</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="fa fa-search header__search-btn-icon"></i>
+                        </button>
+                    </div>
+                    <div class="header__cart hide-on-mobile-table">
+                        <div class="header__cart-list ">
+                            <a href="#" class="header__cart-link ">
+                                <i class="fas fa-file-alt header__cart-icon"></i>
+                                <span class="header__cart-name">
+                                    Thông tin hay
+                                </span>
+                                <div class="header__cart-file ">
+                                    <ul class="header__cart-file-list">
+                                        <li class="header__cart-file-list-item">Tin mới</li>
+                                    </ul>
+                                    <ul class="header__cart-file-list">
+                                        <li class="header__cart-file-list-item">Khuyến mại</li>
+                                    </ul>
+                                    <ul class="header__cart-file-list">
+                                        <li class="header__cart-file-list-item"> Thủ thuật</li>
+                                    </ul>
+                                    <ul class="header__cart-file-list">
+                                        <li class="header__cart-file-list-item">Video hot</li>
+                                    </ul>
+                                    <ul class="header__cart-file-list">
+                                        <li class="header__cart-file-list-item">Đánh giá-tư vấn</li>
+                                    </ul>
+                                    <ul class="header__cart-file-list">
+                                        <li class="header__cart-file-list-item">App và Game</li>
+                                    </ul>
+                                    <ul class="header__cart-file-list">
+                                        <li class="header__cart-file-list-item">Sự kiện</li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="#" class="header__cart-link">
+                                <i class="fas fa-faucet header__cart-icon"></i>
+                                <i class="fas fa-lightbulb header__cart-icon"></i>
+                                <span class="header__cart-name">
+                                    Thu hộ điện,nước
+                                </span>
+                            </a>
+                            <a href="#" class="header__cart-link">
+                                <i class="fa fa-cart-plus header__cart-icon" ></i>
+                                <span class="header__cart-name">Giỏ hàng</span>
+                            </a>
+                        </div>
+                    </div> 
+                </nav>
+            </div>
+        </header>
+        <div class="menu hide-on-mobile-table">
+            <div class="grid wide">
+                <nav class="menu__navbar">
+                    <ul class="menu__navbar-list">
+                        <li class="menu__navbar-item">
+                            <a href="#" class="menu__navbar-link" title="ĐIỆN THOẠI">
+                                <i class="fas fa-mobile-alt menu__navbar-icon"></i>ĐIỆN THOẠI
+                            </a>
+                            <div class="menu__child">
+                                <div class="menu__child-sub-1">
+                                    <h3 class="menu__child-heading">HÃNG SẢN XUẤT</h3>
+                                    <ul class="menu__child-list">
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Iphone</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Samsung</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Oppo</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Huawei</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Realme</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Vivo</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Vsmart</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Xiaomi</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Nokia</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Masstel</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu__child-sub-2">
+                                    <h3 class="menu__child-heading">MỨC GIÁ</h3>
+                                    <ul class="menu__child-list">
+                                        <li class="menu__child-item-2">
+                                            <a href="#" class="menu__child-link">Dưới 3 triệu</a>
+                                        </li>
+                                        <li class="menu__child-item-2">
+                                            <a href="#" class="menu__child-link">Từ 3-5 triệu</a>
+                                        </li>
+                                        <li class="menu__child-item-2">
+                                            <a href="#" class="menu__child-link">Từ 5-8 triệu</a>
+                                        </li>
+                                        <li class="menu__child-item-2">
+                                            <a href="#" class="menu__child-link">Từ 8-11 triệu</a>
+                                        </li>
+                                        <li class="menu__child-item-2">
+                                            <a href="#" class="menu__child-link">Từ 11-14 triệu</a>
+                                        </li>
+                                        <li class="menu__child-item-2">
+                                            <a href="#" class="menu__child-link">Trên 14 triệu</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu__child-sub-3">
+                                    <h3 class="menu__child-heading">BÁN CHẠY NHẤT</h3>
+                                    <ul class="menu__child-list">
+                                        <li class="menu__child-item-3">
+                                            <a href="#" class="menu__child-link">
+                                                <img src="https://img.fpt.shop/w_192/h_192/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/6/2/637267166321989432_SS-A11-xanh-dd.png" alt="" class="menu__child-img">
+                                                <span class="menu__child-img-name">Samsung Galaxy A11</span>
+                                                <span class="menu__child-img-price">3.590.000₫</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu__child-item-3">
+                                            <a href="#" class="menu__child-link">
+                                                <img src="https://img.fpt.shop/w_214/h_214/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/10/1/637371441443932640_xiaomi-mi-10t-pro-bac-dd-bh.png" alt="" class="menu__child-img">
+                                                <span class="menu__child-img-name">Xiaomi Mi 10T Pro 5G 8GB-256GB</span>
+                                                <span class="menu__child-img-price">12.590.000₫</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__navbar-item">
+                            <a href="#" class="menu__navbar-link" title="LAPTOP">
+                                <i class="fa fa-laptop menu__navbar-icon"></i>LAPTOP
+                            </a>
+                            <div class="menu__child">
+                                <div class="menu__child-sub-1">
+                                    <h3 class="menu__child-heading">HÃNG SẢN XUẤT</h3>
+                                    <ul class="menu__child-list">
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">MacBook</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Dell</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Lenovo</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Asus</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Acer</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Huawei</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Hp</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Msi</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Mastel</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu__child-sub-2">
+                                    <h3 class="menu__child-heading">MỨC GIÁ</h3>
+                                    <ul class="menu__child-list">
+                                        <li class="menu__child-item-2">
+                                            <a href="#" class="menu__child-link">Dưới 3 triệu</a>
+                                        </li>
+                                        <li class="menu__child-item-2">
+                                            <a href="#" class="menu__child-link">Từ 3-8 triệu</a>
+                                        </li>
+                                        <li class="menu__child-item-2">
+                                            <a href="#" class="menu__child-link">Từ 8-15 triệu</a>
+                                        </li>
+                                        <li class="menu__child-item-2">
+                                            <a href="#" class="menu__child-link">Từ 15-20 triệu</a>
+                                        </li>
+                                        <li class="menu__child-item-2">
+                                            <a href="#" class="menu__child-link">Từ 20-30 triệu</a>
+                                        </li>
+                                        <li class="menu__child-item-2">
+                                            <a href="#" class="menu__child-link">Trên 30 triệu</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu__child-sub-3">
+                                    <h3 class="menu__child-heading">BÁN CHẠY NHẤT</h3>
+                                    <ul class="menu__child-list">
+                                        <li class="menu__child-item-3">
+                                            <a href="#" class="menu__child-link">
+                                                <img src="https://img.fpt.shop/w_240/h_215/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/5/13/637249620076449085_acer-nitro-an515-55-den-dd.png" alt="" class="menu__child-img">
+                                                <span class="menu__child-img-name">Laptop Acer Nitro Gaming AN515-55-77P9 i7 10750H/8GB/512GB</span>
+                                                <span class="menu__child-img-price">28.990.000đ</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu__child-item-3">
+                                            <a href="#" class="menu__child-link">
+                                                <img src="https://img.fpt.shop/w_240/h_215/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2019/5/31/636948957624237933_macbook-pro--touch-bar-2019-dd.png" alt="" class="menu__child-img">
+                                                <span class="menu__child-img-name">MacBook Air 13" 2017 1.8GHz Core i5 128GB</span>
+                                                <span class="menu__child-img-price">18.990.000đ</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__navbar-item">
+                            <a href="#" class="menu__navbar-link" title="TABLE">
+                                <i class="fas fa-tablet-alt menu__navbar-icon "></i>TABLE</a>
+                                <div class="menu__child">
+                                    <div class="menu__child-sub-1">
+                                        <h3 class="menu__child-heading">HÃNG SẢN XUẤT</h3>
+                                        <ul class="menu__child-list">
+                                            <li class="menu__child-item-1">
+                                                <a href="#" class="menu__child-link">Apple</a>
+                                            </li>
+                                            <li class="menu__child-item-1">
+                                                <a href="#" class="menu__child-link">Samsung</a>
+                                            </li>
+                                            <li class="menu__child-item-1">
+                                                <a href="#" class="menu__child-link">Huawei</a>
+                                            </li>
+                                            <li class="menu__child-item-1">
+                                                <a href="#" class="menu__child-link">Xiaomi</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu__child-sub-2">
+                                        <h3 class="menu__child-heading">MỨC GIÁ</h3>
+                                        <ul class="menu__child-list">
+                                            <li class="menu__child-item-2">
+                                                <a href="#" class="menu__child-link">Dưới 3 triệu</a>
+                                            </li>
+                                            <li class="menu__child-item-2">
+                                                <a href="#" class="menu__child-link">Từ 3-6 triệu</a>
+                                            </li>
+                                            <li class="menu__child-item-2">
+                                                <a href="#" class="menu__child-link">Từ 6-10 triệu</a>
+                                            </li>
+                                            <li class="menu__child-item-2">
+                                                <a href="#" class="menu__child-link">Trên 10 triệu</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu__child-sub-3">
+                                        <h3 class="menu__child-heading">BÁN CHẠY NHẤT</h3>
+                                        <ul class="menu__child-list">
+                                            <li class="menu__child-item-3">
+                                                <a href="#" class="menu__child-link">
+                                                    <img src="https://img.fpt.shop/w_192/h_192/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/4/23/637232548611987631_ss-tab-s6-lite-xam-dd.png" alt="" class="menu__child-img">
+                                                    <span class="menu__child-img-name">Samsung Galaxy Tab S6 Lite</span>
+                                                    <span class="menu__child-img-price">9.490.000₫</span>
+                                                </a>
+                                            </li>
+                                            <li class="menu__child-item-3">
+                                                <a href="#" class="menu__child-link">
+                                                    <img src="https://img.fpt.shop/w_192/h_192/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2018/12/7/636797950350030000_Huawei-MediaPad-T5-10.png" alt="" class="menu__child-img">
+                                                    <span class="menu__child-img-name">Huawei MediaPad T5 10</span>
+                                                    <span class="menu__child-img-price">4.490.000₫</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        </li>
+                        <li class="menu__navbar-item">
+                            <a href="#" class="menu__navbar-link" title="ĐỒNG HỒ">
+                                <svg class="menu__navbar-icon" enable-background="new 0 0 22 22" height="22" viewBox="0 0 22 22" width="22" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path fill="white"
+                                            d="m17.1 4.215-1.398-3.729c-.11-.292-.39-.486-.702-.486h-6c-.313 0-.592.194-.702.487l-1.398 3.728c-1.111.441-1.9 1.52-1.9 2.785v10c0 1.265.789 2.344 1.9 2.784l1.398 3.729c.11.293.389.487.702.487h6c.312 0 .592-.194.702-.487l1.398-3.729c1.11-.44 1.9-1.519 1.9-2.784v-10c0-1.265-.789-2.344-1.9-2.785zm-9.1 13.785c-.551 0-1-.449-1-1v-10c0-.551.449-1 1-1h8c.551 0 1 .449 1 1v10c0 .551-.449 1-1 1z"
+                                        />
+                                        <path  fill="white" d="m13 11.586v-3.336c0-.552-.448-1-1-1s-1 .448-1 1v3.75c0 .265.105.52.293.707l2.25 2.25c.195.195.451.293.707.293s.512-.098.707-.293c.391-.391.391-1.023 0-1.414z" />
+                                    </g>
+                                </svg>
+
+                                ĐỒNG HỒ 
+                            </a>
+                            <div class="menu__child">
+                                <div class="menu__child-sub-1">
+                                    <h3 class="menu__child-heading">ĐỒNG HỒ THÔNG MINH</h3>
+                                    <ul class="menu__child-list">
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Apple Watch</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Samsung</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Oppo</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Huawei</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Kidplus</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Gramin</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Fitbit</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Xiaomi</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Masstel</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu__child-sub-2">
+                                    <h3 class="menu__child-heading">MỨC GIÁ</h3>
+                                    <ul class="menu__child-list">
+                                        <li class="menu__child-item-2">
+                                            <a href="#" class="menu__child-link">Dưới 3 triệu</a>
+                                        </li>
+                                        <li class="menu__child-item-2">
+                                            <a href="#" class="menu__child-link">Từ 3-5 triệu</a>
+                                        </li>
+                                        <li class="menu__child-item-2">
+                                            <a href="#" class="menu__child-link">Từ 5-8 triệu</a>
+                                        </li>
+                                        <li class="menu__child-item-2">
+                                            <a href="#" class="menu__child-link">Từ 8-12 triệu</a>
+                                        </li>
+                                        <li class="menu__child-item-2">
+                                            <a href="#" class="menu__child-link">Trên 12 triệu</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu__child-sub-3">
+                                    <h3 class="menu__child-heading">BÁN CHẠY NHẤT</h3>
+                                    <ul class="menu__child-list">
+                                        <li class="menu__child-item-3">
+                                            <a href="#" class="menu__child-link">
+                                                <img src="https://img.fpt.shop/w_214/h_214/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/9/29/637369907197319165_Apple%C2%A0Watch%20SE%20GPS%C2%A040mm%20dai%20dien.png" alt="" class="menu__child-img">
+                                                <span class="menu__child-img-name">Apple Watch SE GPS 40mm</span>
+                                                <span class="menu__child-img-price">8.490.000₫</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu__child-item-3">
+                                            <a href="#" class="menu__child-link">
+                                                <img src="https://img.fpt.shop/w_214/h_214/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/10/12/637381185835684481_gt2-pro-day-silicon-dd.png" alt="" class="menu__child-img">
+                                                <span class="menu__child-img-name">Huawei Watch GT2 Pro 46mm dây silicon</span>
+                                                <span class="menu__child-img-price">7.490.000₫</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__navbar-item">
+                            <a href="#" class="menu__navbar-link" title="PHỤ KIỆN">
+                                <i class="fas fa-headphones-alt menu__navbar-icon"></i>PHỤ KIỆN
+                            </a>
+                            <div class="menu__child">
+                                <div class="menu__child-sub">
+                                    <h3 class="menu__child-heading">HÃNG SẢN XUẤT</h3>
+                                    <ul class="menu__child-list">
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Bao da ốp lưng</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Sạc dự phòng</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Thẻ nhớ</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Phụ kiện Apple</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Miếng dán màn hình</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Tai nghe</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Loa</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">USB- Ổ cứng</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Sạc cáp</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Chuột-Bàn phím</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">Balo-Túi sách</a>
+                                        </li>
+                                        <li class="menu__child-item-1">
+                                            <a href="#" class="menu__child-link">TV Box</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu__child-sub-3">
+                                    <h3 class="menu__child-heading">BÁN CHẠY NHẤT</h3>
+                                    <ul class="menu__child-list">
+                                        <li class="menu__child-item-3">
+                                            <a href="#" class="menu__child-link">
+                                                <img src="https://img.fpt.shop/w_192/h_192/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2019/6/17/636963759454365620_HASP-00554636-dd-1.png" alt="" class="menu__child-img">
+                                                <span class="menu__child-img-name">Combo Loa Bluetooth Karaoke i.value F12-65N Nhựa đen + Mic</span>
+                                                <span class="menu__child-img-price">2.490.000₫</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu__child-item-3">
+                                            <a href="#" class="menu__child-link">
+                                                <img src="https://img.fpt.shop/w_192/h_192/f_jpg/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/1/14/637146111983706760_Trip10000_Black.jpg" alt="" class="menu__child-img">
+                                                <span class="menu__child-img-name">Pin dự phòng Quick Charge Li-polymer 10000mAH UMETRAVEL</span>
+                                                <span class="menu__child-img-price">590.000₫</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__navbar-item">
+                            <a href="#" class="menu__navbar-link" title="MÁY CŨ GIÁ RẺ">
+                                <i class="fas fa-redo-alt menu__navbar-icon"></i>MÁY CŨ GIÁ RẺ
+                            </a>
+                        </li>
+                        <li class="menu__navbar-item">
+                            <a href="#" class="menu__navbar-link" title="SIM&THẺ">
+                                <i class="fas fa-sim-card menu__navbar-icon"></i>SIM&THẺ
+                            </a>
+                        </li>
+                        <li class="menu__navbar-item">
+                            <a href="#" class="menu__navbar-link" title="KHUYẾN MẠI">
+                                <i class="fas fa-certificate menu__navbar-icon"></i></i>KHUYẾN MẠI
+                            </a>
+                        </li>
+                        <li class="menu__navbar-item">
+                            <a href="#" class="menu__navbar-link" title="TRẢ GÓP">
+                                <i class="fas fa-piggy-bank menu__navbar-icon"></i>TRẢ GÓP
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            <div class="grid wide">
+                    <div class="row no-gutters">
+                        <div class=" l-12 m-12 c-12">
+                            <div class="slider hide-on-mobile-table">
+                                <div class="slides">
+                                    <input type="radio" name="radio-btn" id="radio1">
+                                    <input type="radio" name="radio-btn" id="radio2">
+                                    <input type="radio" name="radio-btn" id="radio3">
+                                    <input type="radio" name="radio-btn" id="radio4">
+                                    <input type="radio" name="radio-btn" id="radio5">
+                                    <input type="radio" name="radio-btn" id="radio6">
+                                    <input type="radio" name="radio-btn" id="radio7">
+                                    <div class="slide first">
+                                        <img src="images/6.png" >
+                                    </div>
+                                    <div class="slide ">
+                                        <img src="images/2.png" >
+                                    </div>
+                                    <div class="slide ">
+                                        <img src="images/3.png" >
+                                    </div>
+                                    <div class="slide ">
+                                        <img src="images/4.png" >
+                                    </div>
+                                    <div class="slide ">
+                                        <img src="images/4.png" >
+                                    </div>
+                                    <div class="slide ">
+                                        <img src="images/6.png" >
+                                    </div>
+                                    <div class="slide ">
+                                        <img src="images/7.png" >
+                                    </div>
+                                <div class="navigation-auto">
+                                    <div class="auto-btn1"></div>
+                                    <div class="auto-btn2"></div>
+                                    <div class="auto-btn3"></div>
+                                    <div class="auto-btn4"></div>
+                                    <div class="auto-btn5"></div>
+                                    <div class="auto-btn6"></div>
+                                    <div class="auto-btn7"></div>
+                                </div>
+                            </div>
+                            <div class="navigation-manual">
+                                <label for="radio1" class="manual-btn"></label>
+                                <label for="radio2" class="manual-btn"></label>
+                                <label for="radio3" class="manual-btn"></label>
+                                <label for="radio4" class="manual-btn"></label>
+                                <label for="radio5" class="manual-btn"></label>
+                                <label for="radio6" class="manual-btn"></label>
+                                <label for="radio7" class="manual-btn"></label>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--slider mobile star-->
+                    <div class="row no-gutters hide-on-pc">
+                        <div class=" m-12 c-12">
+                            <div class="slider-mobile">
+                                <div class="slides-mobile">
+                                    <input type="radio" name="radio-btn1" id="radio11">
+                                    <input type="radio" name="radio-btn1" id="radio12">
+                                    <input type="radio" name="radio-btn1" id="radio13">
+                                    <input type="radio" name="radio-btn1" id="radio14">
+                                    <input type="radio" name="radio-btn1" id="radio15">
+                                    <input type="radio" name="radio-btn1" id="radio16">
+                                    <input type="radio" name="radio-btn1" id="radio17">
+                                    <div class="slide-mobile last">
+                                        <img src="images/6.png" >
+                                    </div>
+                                    <div class="slide-mobile ">
+                                        <img src="images/2.png" >
+                                    </div>
+                                    <div class="slide-mobile ">
+                                        <img src="images/3.png" >
+                                    </div>
+                                    <div class="slide-mobile ">
+                                        <img src="images/4.png" >
+                                    </div>
+                                    <div class="slide-mobile ">
+                                        <img src="images/4.png" >
+                                    </div>
+                                    <div class="slide-mobile ">
+                                        <img src="images/6.png" >
+                                    </div>
+                                    <div class="slide-mobile ">
+                                        <img src="images/7.png" >
+                                    </div>
+                                <div class="navigation-auto-mobile">
+                                    <div class="auto-btn11"></div>
+                                    <div class="auto-btn12"></div>
+                                    <div class="auto-btn13"></div>
+                                    <div class="auto-btn14"></div>
+                                    <div class="auto-btn15"></div>
+                                    <div class="auto-btn16"></div>
+                                    <div class="auto-btn17"></div>
+                                </div>
+                            </div>
+                            <div class="navigation-manual-mobile">
+                                <label for="radio11" class="manual-btn-mobile"></label>
+                                <label for="radio12" class="manual-btn-mobile"></label>
+                                <label for="radio13" class="manual-btn-mobile"></label>
+                                <label for="radio14" class="manual-btn-mobile"></label>
+                                <label for="radio15" class="manual-btn-mobile"></label>
+                                <label for="radio16" class="manual-btn-mobile"></label>
+                                <label for="radio17" class="manual-btn-mobile"></label>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--slider mobile end-->
+                <div class="cate__box">
+                    <div class="row no-gutters">
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://img.fpt.shop/w_60/h_60/f_png/cmpr_10/m_letterbox_ffffff_0/https://fptshop.com.vn/Uploads/images/v5d/dien-thoai.png);">
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Điện thoại</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://img.fpt.shop/w_60/h_60/f_png/cmpr_10/m_letterbox_ffffff_0/https://fptshop.com.vn/Uploads/images/v5d/laptop.png);">
+                                        
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Máy tính</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://img.fpt.shop/w_60/h_60/f_png/cmpr_10/m_letterbox_ffffff_0/https://fptshop.com.vn/Uploads/images/v5d/apple.png);">    
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Apple</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://img.fpt.shop/w_60/h_60/f_png/cmpr_10/m_letterbox_ffffff_0/https://fptshop.com.vn/Uploads/images/v5d/tablet.png);">
+                                        
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Máy tính bảng</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://img.fpt.shop/w_60/h_60/f_png/cmpr_10/m_letterbox_ffffff_0/https://fptshop.com.vn/Uploads/images/v5d/smart-watch.png);">    
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Đồng hồ thông minh</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://img.fpt.shop/w_60/h_60/f_png/cmpr_10/m_letterbox_ffffff_0/https://fptshop.com.vn/Uploads/images/v5d/powerbank.png);">
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Sạc dự phòng</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://img.fpt.shop/w_60/h_60/f_png/cmpr_10/m_letterbox_ffffff_0/https://fptshop.com.vn/Uploads/images/v5d/monitor2x.png);">   
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Màn hình</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://img.fpt.shop/w_60/h_60/f_png/cmpr_10/m_letterbox_ffffff_0/https://fptshop.com.vn/Uploads/images/v5d/kinhcuongluc.png);">
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Kính cường lực</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://img.fpt.shop/w_60/h_60/f_png/cmpr_10/m_letterbox_ffffff_0/https://fptshop.com.vn/Uploads/images/v5d/may_cu.png);">           
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Máy cũ</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://img.fpt.shop/w_60/h_60/f_png/cmpr_10/m_letterbox_ffffff_0/https://fptshop.com.vn/Uploads/images/v5d/may-tinh-de-ban.png);"> 
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Máy tính để bàn</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://img.fpt.shop/w_60/h_60/f_png/cmpr_10/m_letterbox_ffffff_0/https://fptshop.com.vn/Uploads/images/v5d/may_loc_khong_khi.png);">    
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Máy lọc không khí</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://img.fpt.shop/w_60/h_60/f_png/cmpr_10/m_letterbox_ffffff_0/https://fptshop.com.vn/Uploads/images/v5d/may-in.png);">                               
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Máy in</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                </div>
+                <div class="cate__box">
+                    <div class="home__product">
+                        <div class="home__product-heading">
+                            <div class="home__product-heading-name">ĐIỆN THOẠI NỔI BẬT</div>
+                            <a href="#" class="home__product-heading-link ">Xem tất cả
+                                <div class="home-product-heading-separate">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col l-3 m-6 c-6">
+                            <div class="grid-colum-2-4">
+                                <a href="#" class="product-item">
+                                    <div class="product-item__img" style="background-image: url(https://cdn.tgdd.vn/Products/Images/42/228744/iphone-12-pro-max-xam-new-600x600-600x600.jpg);">
+                                    </div>
+                                    <a href="#" class="product-item__name">IPhone 12 Pro Max 128GB</a>
+                                    <div class="box-slider-price">
+                                        <button class=" box-slider-price-old">31.999.999₫</button>
+                                        <button class=" box-slider-price-current">33.999.999₫</button>
+                                    </div>
+                                        <div class="box-slider-gift">
+                                        <i class="fa fa-gift fa-2x"></i>
+                                        <span class="box-slider-gift-color">Get PMH 600,000 VND for 20W Charging Tuber + EarPods Headphones</span>
+                                        </div>
+                                    <div class="product-item__sale">
+                                        <span class="product-item__sale-off-laber">Trả góp</span>
+                                        <span class="product-item__sale-off-percent">0%</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-6">
+                            <div class="grid-colum-2-4">
+                                <a href="#" class="product-item">
+                                    <div class="product-item__img" style="background-image: url(https://img.fpt.shop/w_214/h_214/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/8/5/637322682439532348_ss-note-20-ultra-5g-gold-dd.png);"></div>
+                                    <a href="#" class="product-item__name">Samsung Galaxy Note 20 Ultra</a>
+                                    <div class="box-slider-price">
+                                        <button class=" box-slider-price-old">23.550.000₫</button>
+                                        <button class=" box-slider-price-current">26.899.000₫</button>
+                                    </div>
+                                    <div class="box-slider-gift">
+                                        <i class="fa fa-gift fa-2x"></i>
+                                        <span class="box-slider-gift-color">Get PMH 600,000 VND for 20W Charging Tuber + EarPods Headphones</span>
+                                    </div>
+                                    <div class="product-item__sale">
+                                        <span class="product-item__sale-off-laber">Trả góp</span>
+                                        <span class="product-item__sale-off-percent">0%</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-6">
+                            <div class="grid-colum-2-4">
+                                <a href="#" class="product-item">
+                                    <div class="product-item__img" style="background-image: url(https://img.fpt.shop/w_214/h_214/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/10/1/637371441443932640_xiaomi-mi-10t-pro-bac-dd-bh.png);"></div>
+                                    <a href="#" class="product-item__name">Xiaomi Mi 10T Pro 8GB-256GB</a>
+                                    <div class="box-slider-price">
+                                        <button class=" box-slider-price-old">10.990.000₫</button>
+                                        <button class=" box-slider-price-current">13.999.999₫</button>
+                                    </div>
+                                    <div class="box-slider-gift">
+                                        <i class="fa fa-gift fa-2x"></i>
+                                        <span class="box-slider-gift-color">Get PMH 600,000 VND for 20W Charging Tuber + EarPods Headphones</span>
+                                    </div>
+                                    <div class="product-item__sale">
+                                        <span class="product-item__sale-off-laber">Trả góp</span>
+                                        <span class="product-item__sale-off-percent">0%</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-6">
+                            <div class="grid-colum-2-4">
+                                <a href="#" class="product-item">
+                                    <div class="product-item__img" style="background-image: url(https://cdn.tgdd.vn/Products/Images/42/220438/oppo-reno5-trang-600x600-1-600x600.jpg);"></div>
+                                    <a href="#" class="product-item__name">OPPO RENO5 8GB-128GB</a>
+                                    <div class="box-slider-price">
+                                        <button class=" box-slider-price-old">9.990.000₫</button>
+                                        <button class=" box-slider-price-current">10.999.999₫</button>
+                                    </div>
+                                    <div class="box-slider-gift">
+                                        <i class="fa fa-gift fa-2x"></i>
+                                        <span class="box-slider-gift-color">Get PMH 600,000 VND for 20W Charging Tuber + EarPods Headphones</span>
+                                    </div>
+                                    <div class="product-item__sale">
+                                        <span class="product-item__sale-off-laber">Trả góp</span>
+                                        <span class="product-item__sale-off-percent">0%</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-6">
+                            <div class="grid-colum-2-4">
+                                <a href="#" class="product-item">
+                                    <div class="product-item__img" style="background-image: url(https://img.fpt.shop/w_214/h_214/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2019/11/28/637105309124456387_huawei-nova-5t-xanh-dd.png);"></div>
+                                    <a href="#" class="product-item__name">Huawei Nova 5T 8GB-128GB</a>
+                                    <div class="box-slider-price">
+                                        <button class=" box-slider-price-old">8.990.000₫</button>
+                                        <button class=" box-slider-price-current">9.550.000₫</button>
+                                    </div>
+                                    <div class="box-slider-gift">
+                                        <i class="fa fa-gift fa-2x"></i>
+                                        <span class="box-slider-gift-color">Get PMH 600,000 VND for 20W Charging Tuber + EarPods Headphones</span>
+                                    </div>
+                                    <div class="product-item__sale">
+                                        <span class="product-item__sale-off-laber">Trả góp</span>
+                                        <span class="product-item__sale-off-percent">0%</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-6">
+                            <div class="grid-colum-2-4">
+                                <a href="#" class="product-item">
+                                    <div class="product-item__img" style="background-image: url(https://cdn.tgdd.vn/Products/Images/42/219898/nokia-83-600x600-2-600x600.jpg);"></div>
+                                    <a href="#" class="product-item__name">Điện thoại Nokia 8.3 5G</a>
+                                    <div class="box-slider-price">
+                                        <span class=" box-slider-price-old">8.999.999₫</span>
+                                        <span class=" box-slider-price-current">9.550.000₫</span>
+                                    </div>
+                                    <div class="box-slider-gift">
+                                        <i class="fa fa-gift fa-2x"></i>
+                                        <span class="box-slider-gift-color">Get PMH 600,000 VND for 20W Charging Tuber + EarPods Headphones</span>
+                                    </div>
+                                    <div class="product-item__sale">
+                                        <span class="product-item__sale-off-laber">Trả góp</span>
+                                        <span class="product-item__sale-off-percent">0%</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-6">
+                            <div class="grid-colum-2-4">
+                                <a href="#" class="product-item">
+                                    <div class="product-item__img" style="background-image: url(https://img.fpt.shop/w_214/h_214/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/9/17/637359494094896144_vsmart-aris-pro-xanh-dd.png);"></div>
+                                    <a href="#" class="product-item__name">Vsmart Aris Pro 8GB-128GB</a>
+                                    <div class="box-slider-price">
+                                        <button class=" box-slider-price-old">8.990.000₫</button>
+                                        <button class=" box-slider-price-current">10.550.000₫</button>
+                                    </div>
+                                    <div class="box-slider-gift">
+                                        <i class="fa fa-gift fa-2x"></i>
+                                        <span class="box-slider-gift-color">Get PMH 600,000 VND for 20W Charging Tuber + EarPods Headphones</span>
+                                    </div>
+                                    <div class="product-item__sale">
+                                        <span class="product-item__sale-off-laber">Trả góp</span>
+                                        <span class="product-item__sale-off-percent">0%</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-6">
+                            <div class="grid-colum-2-4">
+                                <a href="#" class="product-item">
+                                    <div class="product-item__img" style="background-image: url(https://img.fpt.shop/w_214/h_214/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/3/27/637209181932509829_vivo-v19-bac-dd.png);"></div>
+                                    <a href="#" class="product-item__name">Vivo V19 8GB-128GB</a>
+                                    <div class="box-slider-price">
+                                        <button class=" box-slider-price-old">7.990.000₫</button>
+                                        <button class=" box-slider-price-current">8.599.000₫</button>
+                                    </div>
+                                    <div class="box-slider-gift">
+                                        <i class="fa fa-gift fa-2x"></i>
+                                        <span class="box-slider-gift-color">Get PMH 600,000 VND for 20W Charging Tuber + EarPods Headphones</span>
+                                    </div>
+                                    <div class="product-item__sale">
+                                        <span class="product-item__sale-off-laber">Trả góp</span>
+                                        <span class="product-item__sale-off-percent">0%</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="row no-gutters">
+                        <div class=" l-12 m-12 c-12">
+                            <div class="banner">
+                                <img class="banner__img" src="https://img.fpt.shop/w_1200/h_200/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2021/1/11/637459681085514921_H5-1200x200.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                <div class="cate__box">
+                    <div class="home__product">
+                        <div class="home__product-heading">
+                            <div class="home__product-heading-name">LAPTOP NỔI BẬT NHẤT</div>
+                            <a href="#" class="home__product-heading-link ">Xem tất cả
+                                <div class="home-product-heading-separate">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col l-3 m-6 c-6">
+                            <div class="grid-colum-2-4">
+                                <a href="#" class="product-item">
+                                    <div class="product-item__img" style="background-image: url(https://img.fpt.shop/w_240/h_215/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/11/12/637407970062806725_mba-2020-gold-dd.png);"></div>
+                                    <a href="#" class="product-item__name">MacBook Air 13" 2020 M1 256GB </a>
+                                    <div class="box-slider-price">
+                                        <button class=" box-slider-price-old">26.990.000₫</button>
+                                        <button class=" box-slider-price-current">28.999.999₫</button>
+                                    </div>
+                                    <div class="product-item__config">
+                                        <div class="product-item__config-name">
+                                            <i class="fas fa-laptop"></i>13.3"
+                                        </div>
+                                        <div class="product-item__config-name">
+                                            <i class="fas fa-microchip"></i>8GB
+                                        </div>
+                                        <div class="product-item__config-name">
+                                            <i class="fas fa-hdd"></i>SSD 256 GB
+                                        </div>
+                                        <div class="product-item__config-name">
+                                            <i class="fas fa-vr-cardboard"></i>APP 1
+                                        </div>
+                                        <div class="home-product-item__config-name">
+                                            <i class="fas fa-weight-hanging"></i>1.8kg
+                                        </div>
+                                    </div>
+                                    <div class="product-item__sale">
+                                        <span class="product-item__sale-off-laber">Trả góp</span>
+                                        <span class="product-item__sale-off-percent">0%</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-6">
+                            <div class="grid-colum-2-4">
+                                <a href="#" class="product-item">
+                                    <div class="product-item__img" style="background-image: url(https://img.fpt.shop/w_214/h_214/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/10/28/637395003613128435_asus-tuf-fx506-xam-dd.png);"></div>
+                                    <a href="#" class="product-item__name">Laptop Asus TUF FX506LI HN039T i5 10300H/512GB</a>
+                                    <div class="box-slider-price">
+                                        <button class=" box-slider-price-old">22.990.000₫</button>
+                                        <button class=" box-slider-price-current">23.999.999₫</button>
+                                    </div>
+                                    <div class="product-item__config">
+                                        <div class="product-item__config-name">
+                                            <i class="fas fa-laptop"></i>15.6"
+                                        </div>
+                                        <div class="product-item__config-name">
+                                            <i class="fas fa-microchip"></i>8GB
+                                        </div>
+                                        <div class="product-item__config-name">
+                                            <i class="fas fa-hdd"></i>SSD 512 GB
+                                        </div>
+                                        <div class="product-item__config-name">
+                                            <i class="fas fa-vr-cardboard"></i>NVIDIA GeForce GTX1650Ti 4Gb
+                                        </div>
+                                        <div class="home-product-item__config-name">
+                                            <i class="fas fa-weight-hanging"></i>2.3kg
+                                        </div>
+                                        </div>
+                                    <div class="product-item__sale">
+                                        <span class="product-item__sale-off-laber">Trả góp</span>
+                                        <span class="product-item__sale-off-percent">0%</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-6">
+                            <div class="grid-colum-2-4">
+                                <a href="#" class="product-item">
+                                    <div class="product-item__img" style="background-image: url(https://images.fpt.shop/unsafe/fit-in/214x214/fptshop.com.vn/Uploads/Originals/2020/6/2/637266906959761961_lenovo-thinkpad-e15-den-dd.png);"></div>
+                                    <a href="#" class="product-item__name">Laptop Lenovo ThinkPad E14 i5 10210U/512GB SSD/WIN10</a>
+                                    <div class="box-slider-price">
+                                        <button class=" box-slider-price-old">17.990.000₫</button>
+                                        <button class=" box-slider-price-current">18.590.000₫</button>
+                                    </div>
+                                    <div class="product-item__config">
+                                        <div class="product-item__config-name">
+                                            <i class="fas fa-laptop"></i>14.0"
+                                        </div>
+                                        <div class="product-item__config-name">
+                                            <i class="fas fa-microchip"></i>8GB
+                                        </div>
+                                        <div class="product-item__config-name">
+                                            <i class="fas fa-hdd"></i>SSD 512 GB
+                                        </div>
+                                        <div class="product-item__config-name">
+                                            <i class="fas fa-vr-cardboard"></i>Intel UHD Graphics
+                                        </div>
+                                        <div class="home-product-item__config-name">
+                                            <i class="fas fa-weight-hanging"></i>1.44kg
+                                        </div>
+                                        </div>
+                                    <div class="product-item__sale">
+                                        <span class="product-item__sale-off-laber">Trả góp</span>
+                                        <span class="product-item__sale-off-percent">0%</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-6">
+                            <div class="grid-colum-2-4">
+                                <a href="#" class="product-item">
+                                    <div class="product-item__img" style="background-image: url(https://img.fpt.shop/w_214/h_214/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2019/10/30/637080523484151384_dell-g3-15-3590-den-dd.png);"></div>
+                                    <a href="#" class="product-item__name">Laptop Dell Inspiron N5490 i7 10510U/512GB/Win 10 </a>
+                                    <div class="box-slider-price">
+                                        <button class=" box-slider-price-old">26.990.000₫</button>
+                                        <button class=" box-slider-price-current">28.999.999₫</button>
+                                    </div>
+                                    <div class="product-item__config">
+                                        <div class="product-item__config-name">
+                                            <i class="fas fa-laptop"></i>14.0"
+                                        </div>
+                                        <div class="product-item__config-name">
+                                            <i class="fas fa-microchip"></i>8GB
+                                        </div>
+                                        <div class="product-item__config-name">
+                                            <i class="fas fa-hdd"></i>SSD 512GB
+                                        </div>
+                                        <div class="product-item__config-name">
+                                            <i class="fas fa-vr-cardboard"></i>GeForce MX230 2GB
+                                        </div>
+                                        <div class="home-product-item__config-name">
+                                            <i class="fas fa-weight-hanging"></i>1.43kg
+                                        </div>
+                                        </div>
+                                    <div class="product-item__sale">
+                                        <span class="product-item__sale-off-laber">Trả góp</span>
+                                        <span class="product-item__sale-off-percent">0%</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                    <div class="row no-gutters">
+                        <div class=" l-12 m-12 c-12">
+                            <div class="banner">
+                                <img class="banner__img" src="https://img.fpt.shop/w_1200/h_200/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2021/1/11/637459681085514921_H5-1200x200.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                <div class="cate__box">
+                    <div class="home__product">
+                        <div class="home__product-heading">
+                            <div class="home__product-heading-name">ĐỒNG HỒ THÔNG MINH</div>
+                            <a href="#" class="home__product-heading-link ">Xem tất cả
+                                <div class="home-product-heading-separate">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col l-3 m-6 c-6">
+                            <div class="grid-colum-2-4">
+                                <a href="#" class="product-item">
+                                    <div class="product-item__img" style="background-image: url(https://img.fpt.shop/w_214/h_214/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/9/29/637369907197319165_Apple%C2%A0Watch%20SE%20GPS%C2%A040mm%20dai%20dien.png);"></div>
+                                    <a href="#" class="product-item__name">Apple Watch SE GPS 40mm viền nhôm dây cao su</a>
+                                    <div class="product-item__size">
+                                        <button class="btn product__size-m">36 mm</button>
+                                        <button class="btn product__size-l">40 mm</button>
+                                    </div>
+                                    <div class="box-slider-price">
+                                        <button class=" box-slider-price-old">7.990.000₫</button>
+                                        <button class=" box-slider-price-current">8.999.999₫</button>
+                                    </div>
+                                    <div class="product-item__sale">
+                                        <span class="product-item__sale-off-laber">Trả góp</span>
+                                        <span class="product-item__sale-off-percent">0%</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-6">
+                            <div class="grid-colum-2-4">
+                                <a href="#" class="product-item">
+                                    <div class="product-item__img" style="background-image: url(https://img.fpt.shop/w_214/h_214/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2019/10/10/637063224523046142_SS-watch-active-2-black-dd.png);"></div>
+                                    <a href="#" class="product-item__name">Galaxy Watch Active 2 40mm viền thép dây da </a>
+                                    <div class="product-item__size">
+                                        <button class="btn product__size-m">36 mm</button>
+                                        <button class="btn product__size-l">40 mm</button>
+                                    </div>
+                                    <div class="box-slider-price">
+                                        <button class=" box-slider-price-old">8.990.000₫</button>
+                                        <button class=" box-slider-price-current">10.999.999₫</button>
+                                    </div>
+                                    <div class="product-item__sale">
+                                        <span class="product-item__sale-off-laber">Trả góp</span>
+                                        <span class="product-item__sale-off-percent">0%</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-6">
+                            <div class="grid-colum-2-4">
+                                <a href="#" class="product-item">
+                                    <div class="product-item__img" style="background-image: url(https://img.fpt.shop/w_214/h_214/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/10/12/637381185835684481_gt2-pro-day-silicon-dd.png);"></div>
+                                    <a href="#" class="product-item__name">Huawei Watch GT2 Pro 40mm dây silicon</a>
+                                    <div class="product-item__size">
+                                        <button class="btn product__size-m">36 mm</button>
+                                        <button class="btn product__size-l">40 mm</button>
+                                    </div>
+                                    <div class="box-slider-price">
+                                        <button class=" box-slider-price-old">7.990.000₫</button>
+                                        <button class=" box-slider-price-current">9.450.000₫</button>
+                                    </div>
+                                    <div class="product-item__sale">
+                                        <span class="product-item__sale-off-laber">Trả góp</span>
+                                        <span class="product-item__sale-off-percent">0%</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-6">
+                            <div class="grid-colum-2-4">
+                                <a href="#" class="product-item">
+                                    <div class="product-item__img" style="background-image: url(https://img.fpt.shop/w_214/h_214/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/3/9/637193630528058692_oppo-watch-dd.png);"></div>
+                                    <a href="#" class="product-item__name">Oppo Watch 40mm Wifi (OW19W6)</a>
+                                    <div class="product-item__size">
+                                        <button class="btn product__size-m">36 mm</button>
+                                        <button class="btn product__size-l">40 mm</button>
+                                    </div>
+                                    <div class="box-slider-price">
+                                        <button class=" box-slider-price-old">5.990.000₫</button>
+                                        <button class=" box-slider-price-current">6.999.999₫</button>
+                                    </div>
+                                    <div class="product-item__sale">
+                                        <span class="product-item__sale-off-laber">Trả góp</span>
+                                        <span class="product-item__sale-off-percent">0%</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cate__box">
+                    <div class="row no-gutters">
+                        <div class="col l-4 m-4 c-4">
+                            <div class="banner">
+                                <img class="banner__img" src="https://img.fpt.shop/w_394/h_115/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/5/12/637248775542477729_sim-so.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col l-4 m-4 c-4">
+                            <div class="banner">
+                                <img class="banner__img" src="https://img.fpt.shop/w_394/h_115/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/5/12/637248775946053051_the-cao.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col l-4 m-4 c-4">
+                            <div class="banner">
+                                <img class="banner__img" src="https://img.fpt.shop/w_394/h_115/f_png/cmpr_10/m_letterbox_ffffff_100/https://fptshop.com.vn/Uploads/Originals/2020/5/12/637248776517146629_f-friends.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cate__box">
+                    <div class="home__product">
+                        <div class="home__product-heading">
+                            <div class="home__product-heading-name">PHỤ KIỆN HOT</div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://www.thegioididong.com/Content/desktop/images/V4/newiconaccessories/00_noibat.png?v=2);">
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Nổi bật</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://cdn.tgdd.vn/Category/9518/Sac-cap-l-18-01-2021.png);">
+                                        
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Sạc dự phòng</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://cdn.tgdd.vn/Category/54/Tai-nghe-l-21-10-2019.png);">    
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Tai nghe</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://cdn.tgdd.vn/Category/2162/Loa-l-21-04-2020.png);">
+                                        
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Loa</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://cdn.tgdd.vn/Category/55/The-nho-l-21-10-2019.png);">    
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Thẻ nhớ</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://cdn.tgdd.vn/Category/75/USB-l-20-11-2019.png);">
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>USB</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://cdn.tgdd.vn/Category/1902/O-cung-di-dong-l-26-11-2019.png);">   
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Ổ cứng di động</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://cdn.tgdd.vn/Category/9386/Chuot,-ban-phim-l-25-11-2020.png);">
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Chuột,Bàn phím</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://cdn.tgdd.vn/Category/7923/Balo,-tui-chong-soc-l-19-05-2020.png);">           
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Balo,túi chống sóc</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://cdn.tgdd.vn/Category/4727/Thiet-bi-mang-l-26-11-2019.png);"> 
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Thiết bị mạng</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://cdn.tgdd.vn/Category/9358/Thiet-bi-thong-minh-l-16-11-2020.png);">    
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Android,TV Box</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-2 m-4 c-4">
+                        <a href="#" class="cate__box-item">
+                            <div class="cate__box-item-cont">
+                                <div class="cate__box-item-list">
+                                    <div class="cate__box-item-list-img" style="background-image: url(https://www.thegioididong.com/Content/desktop/images/V4/newiconaccessories/30_xemthem_desk.png);">                               
+                                    </div>
+                                </div>
+                                <div class="cate-box-item-name">
+                                    <span>Xem thêm</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row no-gutters">
+                    <div class=" l-3 m-4 c-6">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="foooter__link">
+                                    Giới thiệu về cửa hàng
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="foooter__link">
+                                    Chính sách bảo mật
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="foooter__link">
+                                    Chính sách bảo hành
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="foooter__link">
+                                    Chính sách đổi trả 
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="foooter__link">
+                                    Quy chế hoạt động
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="foooter__link">
+                                    Kiểm tra hóa đơn hoạt động
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="foooter__link">
+                                    Giới thiệu về thông tin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" l-3 m-4 c-6">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="foooter__link">
+                                    Tin tuyển dụng
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="foooter__link">
+                                    Tin khuyến mãi
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="foooter__link">
+                                    Hưỡng dẫn mua online
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="foooter__link">
+                                    Hưỡng dẫn mua trả góp
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="foooter__link">
+                                    Chính sách trả góp
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="foooter__link">
+                                    Chất lượng phục vụ
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="foooter__link">
+                                    Quy chế hoạt động
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" l-3 m-4 c-12">
+                        <ul class="footer__list">
+                            <li class="footer__item">Gọi mua hàng: 
+                                <a href="#" class="foooter__link">
+                                    <span class="footer__number">1900.3536</span>
+                                </a> (7:30 - 22:00)
+                            </li>
+                            <li class="footer__item">Gọi khiếu nại: 
+                                <a href="#" class="foooter__link">
+                                    <span class="footer__number">1900.3537</span> 
+                                </a>(8:00 - 21:30)
+                            </li>
+                            <li class="footer__item">Gọi bảo hành: 
+                                <a href="#" class="foooter__link">
+                                    <span class="footer__number">1900.3538</span> 
+                                </a>(8:00 - 21:00)
+                            </li>
+                            <li class="footer__item"> Kỹ thuật: 
+                                <a href="#" class="foooter__link">
+                                    <span class="footer__number">1900.3536</span> 
+                                </a>(7:30 - 21:30)
+                            </li>
+                        </ul>
+                        <h4>HỖ TRỢ THANH TOÁN</h4>
+                        <div class="row no-gutters">
+                            <div class=" l-2 m-4 c-2">
+                                <div >
+                                    <i class="fab fa-cc-visa footer__list-icon"></i>
+                                </div>
+                            </div>
+                            <div class=" l-2 m-4 c-2">
+                                <div >
+                                    <i class="fab fa-cc-mastercard footer__list-icon"></i>
+                                </div>
+                            </div>
+                            <div class=" l-2 m-4 c-2">
+                                <div>
+                                    <i class="fab fa-cc-amazon-pay footer__list-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" l-3 m-4 c-12">
+                        
+                        <ul class="footer__list hide-on-mobile-table">
+                            <h4>MẠNG XÃ HỘI</h4>
+                            <li class="footer__item ">
+                                <a style="color:blue" href="#" class="foooter__link">
+                                    <i  class="fab fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a style="color:red" href="#" class="foooter__link">
+                                    <i class="fab fa-youtube"></i>
+                                    Youtube
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer__bt">
+            <span class="footer__bt-name" >
+                © 2007 - 2020 Công Ty Cổ Phần Bán Lẻ Kỹ Thuật Số Hoàng Trung / Địa chỉ: 173 Thanh Xuân- Hà Nội / GPĐKKD số 0372462825 do Sở KHĐT TP.HN cấp ngày 29/03/2015. GP số 47/GP-TTĐT do sở TTTT TP HN cấp ngày 10/07/2017. Điện thoại: (061)82537243. Email: Hoangtrung@mobile.com.vn. Chịu trách nhiệm nội dung:Nguyễn Nhật Hoàng Anh
+            </span>
+        </div>
+    </div>
+    <!-- Modal-->
+    <!-- <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="modal__inner"> -->
+                <!--auth-form-register-->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <span class="auth-form__switch">Đăng nhập</span>
+                        </div>
+                        <div class="auth-form-form">
+                            <div class="auth-form__group">
+                                <input type="email" class="auth-form__input" placeholder="Email">
+                                <i class="fas fa-envelope auth-form__input-icon"></i>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Tên đăng nhập">
+                                <i class="fas fa-user auth-form__input-icon"></i>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Mật khẩu">
+                                <i class="fas fa-lock auth-form__input-icon"></i>
+                            </div>
+                        </div>
+                        <div class="auth-form__control">
+                            <button class="auth-form__control-btn ">TRỞ LẠI</button>
+                            <button class="auth-form__control-btn btn--header">ĐĂNG KÍ</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials">
+                        <button class="  btn-with-icon auth-form__socials--facebook">
+                            <i class="auth-form__socials-icon fab fa-facebook"></i>
+                            Kết nối với Facebook
+                        </button>
+                        <button class="  btn-with-icon auth-form__socials--google">
+                            <i class="auth-form__socials-icon fab fa-google-plus"></i>
+                            Kết nối với Google
+                        </button>
+                    </div>
+                </div> -->
+                <!--auth-form-login-->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span class="auth-form__switch">Đăng ký</span>
+                        </div>
+                        <div class="auth-form-form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email/Số điện thoại/Tên đăng nhập">
+                                
+                            </div>
+                            <div class="auth-form__group">
+                                <input  type="password" class="auth-form__input" placeholder="Mật khẩu">
+                                <i class="fa fa-eye-slash auth-form__input-icon"></i>
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                                <div class="auth-form__help">
+                                    <a href="#" class="auth-form__help-link">Quên mật khẩu</a>
+                                    <a href="#" class="auth-form__help-link">Cần trợ giúp?</a>
+                                </div>
+                            </div>
+                        <div class="auth-form__control">
+                            <button class="auth-form__control-btn ">TRỞ LẠI</button>
+                            <button class="auth-form__control-btn btn--header">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials">
+                        <button class="  btn-with-icon auth-form__socials--facebook">
+                            <i class="auth-form__socials-icon fab fa-facebook"></i>
+                            Kết nối với Facebook
+                        </button>
+                        <button class="btn-with-icon auth-form__socials--google">
+                            <i class="auth-form__socials-icon fab fa-google-plus"></i>
+                            Kết nối với Google
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   -->
+    <script src="./fpt.js"></script>
+</body>
+</html>
